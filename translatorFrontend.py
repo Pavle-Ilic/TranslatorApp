@@ -10,9 +10,9 @@ clicked = st.button("Translate")
 
 st.write("French Translation:")
 
-tokenizer = T5TokenizerFast.from_pretrained('t5-base')
+tokenizer = T5TokenizerFast.from_pretrained('t5-small')
 
-model = T5ForConditionalGeneration.from_pretrained('t5-base', return_dict=True)
+model = T5ForConditionalGeneration.from_pretrained('t5-small', return_dict=True)
 
 if clicked and len(user_input) == 0:
     st.write("Come on now lets enter some text translate, i'll give you 3 seconds ...3...2...1...:gun:")
