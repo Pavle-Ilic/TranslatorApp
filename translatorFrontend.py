@@ -1,5 +1,4 @@
 import streamlit as st
-import transformers
 from transformers import T5TokenizerFast, T5ForConditionalGeneration
 
 st.title('Translator from Anglais to Francais:exclamation:')
